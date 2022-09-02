@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-class StepCounter: ObservedObject {
+class StepCounter: ObservableObject {
     
-    var totalSteps: Int = 0
+    @Published var totalSteps: Int = 0
     
     func addOneStep() {
         totalSteps += 1

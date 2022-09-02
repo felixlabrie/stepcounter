@@ -9,7 +9,7 @@ import SwiftUI
 
 struct StepButton: View {
     
-    var stepCounter: StepCounter = StepCounter()
+    @StateObject var stepCounter: StepCounter = StepCounter()
     
     var body: some View {
         
