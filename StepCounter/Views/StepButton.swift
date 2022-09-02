@@ -20,6 +20,7 @@ struct StepButton: View {
             .background(Color(.systemYellow))
             .clipShape(Circle())
             .onTapGesture(perform: stepCounter.addOneStep)
+            .onLongPressGesture(perform: stepCounter.resetCounter)
     }
 }
 

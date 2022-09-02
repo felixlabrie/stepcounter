@@ -16,4 +16,8 @@ class StepCounter: ObservableObject {
         print(totalSteps)
     }
     
+    func resetCounter() {
+        totalSteps = 0
+    }
+    
 }
